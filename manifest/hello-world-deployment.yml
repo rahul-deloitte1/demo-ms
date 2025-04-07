@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hello-world-container
-        image: <your-account-id>.dkr.ecr.<your-region>.amazonaws.com/java-hello-world:latest
+        image: 862402797070.dkr.ecr.us-east-1.amazonaws.com/java-hello-world:latest
         ports:
         - containerPort: 8080
         env:
