@@ -1,0 +1,124 @@
+{
+  "namespace": "zuorabilling.avro",
+  "type": "record",
+  "name": "Ready_To_Fulfill",
+  "fields": [
+    {
+      "name": "eventId",
+      "type": "string"
+    },
+    {
+      "name": "action",
+      "type": "string"
+    },
+    {
+      "name": "billingCustomerId",
+      "type": "string"
+    },
+    {
+      "name": "billingCustomerName",
+      "type": "string"
+    },
+    {
+      "name": "orderId",
+      "type": "string"
+    },
+    {
+      "name": "subscriptionId",
+      "type": "string"
+    },
+    {
+      "name": "version",
+      "type": "string"
+    },
+    {
+      "name": "revision",
+      "type": "string"
+    },
+    {
+      "name": "ratePlans",
+      "type": {
+        "type": "record",
+        "name": "RatePlan",
+        "fields": [
+          {
+            "name": "ratePlanCharges",
+            "type": {
+              "type": "record",
+              "name": "RatePlanCharge",
+              "fields": [
+                {
+                  "name": "ratePlanCharge",
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                {
+                  "name": "ratePlanChargeID",
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                {
+                  "name": "ratePlanChargeNumber",
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                {
+                  "name": "effectiveStartDate",
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                {
+                  "name": "effectiveEndDate",
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subscriptionScheduledCancelDate",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "subscriptionScheduledSuspendDate",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "subscriptionScheduledResumeDate",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "createdDateTime",
+      "type": "string"
+    },
+    {
+      "name": "updatedDateTime",
+      "type": "string"
+    }
+  ]
+}

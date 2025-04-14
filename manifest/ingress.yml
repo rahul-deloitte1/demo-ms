@@ -9,7 +9,7 @@ metadata:
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]' # Configures the ALB to listen on port 80
 spec:
   rules:
-  - host: hello-world.example.com # Replace with your domain or leave blank for default
+  - host: # Replace with your domain or leave blank for default
     http:
       paths:
       - path: /

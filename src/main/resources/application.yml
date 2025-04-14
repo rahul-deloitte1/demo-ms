@@ -1,0 +1,27 @@
+# Default settings
+server:
+  port: 8080
+
+spring:
+  application:
+    name: eh-integration-zbfs-publisher
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          zuora:
+#            client-id: 0ddd4cfd-a83e-4fa6-ac5c-c127de8ffbb6
+#            client-secret: mYDYQO+arOQ8ImNX2YbkjLl8k8txE241ErOK6s
+#            scope: read,write
+#            authorization-grant-type: client_credentials
+#            client-authentication-method: post
+#        provider:
+#          zuora:
+#            token-uri: https://rest.test.zuora.com/oauth/token
